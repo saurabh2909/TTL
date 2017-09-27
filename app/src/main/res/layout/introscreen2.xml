@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ttlbgimage"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ttl_signup_logo"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeper"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/relative_layout_X"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/personimg1"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/txts3"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Search for tutors"
+            android:textSize="28sp"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/txts4"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="that are online"
+            android:textSize="28sp"
+            android:layout_below="@+id/txts3"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/txts5"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="NOW."
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_below="@+id/txts4"
+            android:textColor="#fff"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

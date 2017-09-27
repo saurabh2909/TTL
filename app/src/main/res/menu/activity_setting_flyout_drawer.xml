@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home"
+            android:id="@+id/profile"
+            android:title="Profile"
+            />
+        <item
+            android:icon="@drawable/desiretour"
+            android:id="@+id/desired_tutor"
+            android:title="Desired Tutor" />
+        <item
+            android:id="@+id/payment_options"
+            android:icon="@drawable/paypal"
+            android:title="Payment Options" />
+
+        <item
+            android:icon="@drawable/desiretour"
+            android:id="@+id/lesson_tracking"
+            android:title="Lesson Tracking" />
+        <item
+            android:icon="@drawable/tilt"
+            android:id="@+id/TTL_Score"
+            android:title="TTL Score" />
+        <item
+            android:icon="@drawable/history"
+            android:id="@+id/History"
+            android:title="History"/>
+        <item
+            android:icon="@drawable/notification"
+            android:id="@+id/notification"
+            android:title="Notification" />
+        <item
+            android:icon="@drawable/support"
+            android:id="@+id/support"
+            android:title="Support"/>
+        <item
+            android:icon="@drawable/signout"
+            android:id="@+id/sign_out"
+            android:title="Sign out"/>
+        <item
+            android:icon="@drawable/signout"
+            android:id="@+id/daily_game"
+            android:title="Tutor Guide"/>
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

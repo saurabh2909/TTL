@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:backgroundTint="#80000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:id="@+id/customlLay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/customPopUpText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You're in!"
+                    android:textColor="#0BA3DD"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/customlLay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customlLay1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/customPopUpText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/popupText2"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <TextView
+
+                    android:id="@+id/customPopUpText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/customPopUpText2"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/popupText3"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/customPopUpText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/customPopUpText3"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/popupText4"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/customlLay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customlLay2"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/poptextpart1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/student"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="#fff"
+                        android:src="@mipmap/student" />
+
+
+                    <TextView
+                        android:id="@+id/textstudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/student"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Student"
+                        android:textColor="#0BA3DD"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/poptextpart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/poptextpart1">
+
+                    <ImageView
+                        android:id="@+id/tutor"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="#fff"
+                        android:src="@mipmap/tutor" />
+
+                    <TextView
+                        android:id="@+id/texttutor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tutor"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Tutor"
+                        android:textColor="#0BA3DD"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

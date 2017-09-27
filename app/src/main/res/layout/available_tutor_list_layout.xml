@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/available_tutor_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/TutorImg"
+                android:layout_width="68dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user2" />
+
+            <LinearLayout
+                android:id="@+id/availableTutorListLayoutFavoriteTag"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/star_filled"
+                android:orientation="horizontal"
+                android:scaleType="fitCenter"
+                android:visibility="gone" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/availableTutorListFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="First Name"
+                    android:textColor="#85929E"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/availableTutorListLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:visibility="gone"
+                    android:textColor="#85929E"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="5dp"
+                 android:orientation="horizontal"
+                 android:layout_gravity="center"
+                 android:weightSum="1">
+
+                 <ImageButton
+                     android:id="@+id/TutorTypeImg"
+                     android:layout_width="10dp"
+                     android:layout_height="10dp"
+                     android:layout_gravity="center"
+                     android:background="@drawable/red_dot"
+                     />
+
+                 <TextView
+                     android:id="@+id/availableTutorListType"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_marginLeft="5dp"
+                     android:layout_weight="0.8"
+                     android:text="Silver"
+                     android:textColor="#85929E"
+                     android:textSize="12dp" />
+             </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:isIndicator="true"
+                    android:minHeight="5dp"
+                    android:numStars="5"
+                    android:progressTint="@color/yellow" />
+                <!--style="@style/customRatingBar"-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/availableTutorListCPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:text="0.00"
+                    android:textColor="#85929E"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credits/Min"
+                    android:textColor="#85929E"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/availableTutor_uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#85929E"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/availableTutor_hpr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#85929E"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/msgButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <ImageButton
+
+                    android:id="@+id/msgButton1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:adjustViewBounds="true"
+
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/message" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-3dp"
+                    android:text="Message"
+                    android:textColor="@color/orange"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/videocallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/videocallButton1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/video" />
+
+                <TextView
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Talk Now"
+                    android:textColor="@color/orange"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+</LinearLayout>

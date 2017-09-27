@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videocontrols2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/callendMessage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#0098DA"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mg" />
+
+    <ImageView
+        android:id="@+id/callmute"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#0098DA"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gal" />
+
+    <ImageView
+        android:id="@+id/callchangecamera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="#0098DA"
+        android:padding="9dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/doc" />
+</LinearLayout>

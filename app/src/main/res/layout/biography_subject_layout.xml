@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ListView
+        android:layout_weight="10"
+        android:id="@+id/biography_subject_languages_recyclerview"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/biography_biography_save_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/capt"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp" />
+
+</LinearLayout>

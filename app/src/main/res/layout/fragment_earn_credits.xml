@@ -1,0 +1,416 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saubhagyam.thetalklist.EarnCredits">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECF0F1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        android:text="Current Balance:"
+                        android:textColor="#5DADE2"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/earn_credit_currentBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:gravity="center"
+                        android:text="(2.65)"
+                        android:textColor="#AEB6BF"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Share affliate link to earn credits:"
+                        android:textColor="#5DADE2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="http://techno-sanjay/dev.thetalklist.com"
+                        android:textColor="#AEB6BF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/notdetailspatern"
+                        android:gravity="center"
+                        android:text="Invite Friend"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="#F8F9F9" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- <TableLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+                     <TableRow>
+                         <TextView
+                             android:layout_weight="1"
+                             android:layout_marginTop="10dp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Tutoring Rate/min:"
+                             android:textColor="#5DADE2"
+                             android:textSize="15sp"
+                             android:gravity="center"
+                             />
+                         <TextView
+                             android:layout_weight="1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="USD 20.00"
+                             android:gravity="center"
+                             android:layout_gravity="center"
+                             android:textColor="#AEB6BF"
+                             android:textSize="15sp"
+                             />
+                     </TableRow>
+                     <TableRow>
+                         <TextView
+                             android:layout_weight="1"
+                             android:layout_marginTop="10dp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Cashout Credits:"
+                             android:textColor="#5DADE2"
+                             android:textSize="15sp"
+                             android:gravity="center"
+                             />
+                         <EditText
+                             android:layout_weight="1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:hint="Enter PayPal email"
+                             android:gravity="center"
+                             android:layout_gravity="center"
+                             android:textColor="#AEB6BF"
+                             android:textSize="15sp"
+                             android:textColorHint="#AEB6BF"
+
+                             />
+                     </TableRow>
+                     <TableRow>
+                         <view
+                             android:layout_height="match_parent"
+                             android:layout_width="match_parent"
+                             android:layout_weight="1"
+                             android:background="#ffffff"/>
+                         <EditText
+                             android:layout_weight="1"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:hint="Enter Amount"
+                             android:gravity="center"
+                             android:layout_gravity="center"
+                             android:textColor="#AEB6BF"
+                             android:textSize="15sp"
+                             android:textColorHint="#AEB6BF"
+                             />
+                     </TableRow>
+                 </TableLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:background="#ECF0F1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Tutoring Rate/hr:"
+                        android:textColor="#5DADE2"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#E0E0E0" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/earn_credit_ratePerMinute"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:text="USD $10/hr ($0.16/min)"
+                        android:textColor="#AEB6BF"
+                        android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:background="#ECF0F1"
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Cashout Credits:"
+                        android:textColor="#5DADE2"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#E0E0E0" />
+
+                    <EditText
+                        android:id="@+id/earn_credit_paypalEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="27dp"
+                        android:backgroundTint="#00000000"
+                        android:hint="Enter PayPal email"
+                        android:textColor="#AEB6BF"
+                        android:textColorHint="#AEB6BF"
+                        android:textSize="15sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#ECF0F1"
+                        android:layout_weight="1"
+                        />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="#E0E0E0" />
+
+                    <EditText
+                        android:id="@+id/earn_credit_paypalaamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="42dp"
+                        android:backgroundTint="#00000000"
+                        android:hint="Enter Amount"
+                        android:textColor="#AEB6BF"
+                        android:textColorHint="#AEB6BF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#ECF0F1"
+                        android:text="Make a difference and donate some of your earnings to support SDG4 (Sustainable Development Goals for Education):"
+                        android:textAlignment="viewStart"
+                        android:textSize="12dp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="#ECF0F1"
+                            android:padding="10dp"
+                            android:src="@drawable/aiesec_logo" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="#E0E0E0" />
+
+                        <EditText
+                            android:id="@+id/earn_credit_AIESEC_ammount"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:backgroundTint="#00000000"
+                            android:hint="Enter Amount"
+                            android:inputType="number"
+                            android:textColor="#AEB6BF"
+                            android:textColorHint="#AEB6BF"
+                            android:textSize="15sp" />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#E0E0E0" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/earn_credit_submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/capt"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

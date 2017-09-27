@@ -1,0 +1,237 @@
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="Message">
+
+    // TODO: Update blank fragment layout
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/x"
+        android:background="#F2F3F4"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#85929E"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_height="50dip"
+                android:src="@drawable/user2"
+                android:layout_width="50dip" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#B2BABB"
+                android:textSize="17sp"
+                android:text="Kelly Metz-Mathews"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:textColor="#B2BABB"
+                android:textSize="10sp"
+                android:text="Yesturday"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:textColor="#B2BABB"
+                android:textSize="10sp"
+                android:layout_marginRight="10dp"
+                android:text="2:30p.m."/>
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#ABB2B9"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dip"
+                    android:src="@drawable/user2"
+                    android:layout_width="50dip" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#B2BABB"
+                    android:textSize="17sp"
+                    android:text="Kelly Metz-Mathews"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:textColor="#B2BABB"
+                    android:textSize="10sp"
+                    android:text="5:30p.m."/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#ABB2B9"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="50dip"
+                    android:src="@drawable/user2"
+                    android:layout_width="50dip" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#B2BABB"
+                    android:textSize="17sp"
+                    android:text="Kelly Metz-Mathews"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:textColor="#B2BABB"
+                    android:textSize="10sp"
+                    android:text="4:30p.m."/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#ABB2B9"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.saubhagyam.thetalklist.com.Application.saubhagyam.thetalklist.Message">
+
+    <LinearLayout
+        android:id="@+id/chatroom_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/SenderImg"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginStart="-60dp"
+            android:layout_weight="1"
+            android:src="@drawable/user2" />
+
+        <TextView
+            android:id="@+id/senderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="-50dp"
+            android:layout_weight="1"
+            android:text="Kelly Metz-Mathews"
+            android:textColor="#B2BABB"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Messageday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Yesterday"
+                android:textAlignment="textEnd"
+                android:textColor="#B2BABB"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Messagetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Yesterday"
+                android:textAlignment="textEnd"
+                android:textColor="#B2BABB"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!--     <TextView
+                 android:id="@+id/MessageTime"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginLeft="2dp"
+                 android:layout_weight="1"
+                 android:text="2:30p.m."
+                 android:textColor="#B2BABB"
+                 android:textSize="10sp" />-->
+    </LinearLayout>
+</LinearLayout>

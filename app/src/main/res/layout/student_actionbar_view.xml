@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/student_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3298CB"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/StudentToolbarLayout"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="-15dp"
+                android:text="Credits"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/num_credits"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-7dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ttlScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginBottom="-15dp"
+                android:text="TTL Score"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/num_ttlScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="-7dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tutorNow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="-10dp"
+                android:text="Tutor Now"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="-7dp"
+                android:checked="true"
+                android:shadowColor="@color/perfectGreen"
+                android:theme="@style/SCBSwitch" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandedTutorToolbar"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_marginStart="-50dp"
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Hi, i'm" />
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/expandedToolbartutorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Denial" />
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!" />
+        </LinearLayout>
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_gravity="end"
+            android:background="#3398CC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>-->
+
+</LinearLayout>

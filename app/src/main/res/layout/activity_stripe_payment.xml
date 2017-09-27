@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="-50dp"
+    tools:context="com.example.saubhagyam.thetalklist.com.Application.saubhagyam.thetalklist.StripePaymentActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wallet"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment with Stripe.."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <com.stripe.android.view.CardInputWidget
+        android:layout_width="match_parent"
+        android:id="@+id/card_input_widget"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:background="@drawable/background_border_black"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#42A5F5"
+        />
+</LinearLayout>

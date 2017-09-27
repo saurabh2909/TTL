@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:backgroundTint="#80000000"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_corner_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/insufficient_firstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sorry you don't "
+            android:textColor="#5DADE2"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/insufficient_secondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="have enough"
+            android:textColor="#5DADE2"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/insufficient_thirdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="credits."
+            android:textColor="#5DADE2"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/insufficient_forthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please purchase."
+            android:textColor="#5DADE2"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/okbtn"
+            android:layout_width="120dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button_orange_back"
+        android:text="OK"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

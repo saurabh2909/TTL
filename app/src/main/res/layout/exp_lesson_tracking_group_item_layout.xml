@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:padding="5dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:background="#00000000"
+        android:buttonTint="@color/perfectGreen"
+        android:layout_gravity="center"
+        />
+    <!--android:button="@drawable/custom_checkbox_design"-->
+    <TextView
+        android:id="@+id/exp_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Biography"
+        android:textColor="#000000"
+        android:textSize="12dp" />
+</LinearLayout>

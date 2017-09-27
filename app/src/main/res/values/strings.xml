@@ -1,0 +1,334 @@
+<resources>
+    <string name="app_name">TheTalkList</string>
+    <string name="facebook_app_id">1759804367682975</string>
+    <string name="login_forget_password">Forgot Password?</string>
+    <string name="title_activity_intro_screen_swipe">IntroScreenSwipe</string>
+    <string name="action_settings">Settings</string>
+    <string name="popupText2">With one account you can learn with vitual credits</string>
+    <string name="popupText3">or tutor to earn credits/money.</string>
+    <string name="popupText4">Which would you like to do today?</string>
+    <string name="title_activity_user_details">UserDetails</string>
+    <string name="completing_purchase">completing purchase</string>
+
+
+    <!--New opentok strings-->
+
+
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="rationale_video_app">This app needs access to your camera and mic to make video calls</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+
+    <string name="setting">Settings</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Firebase cloud messaging application ListItems strings-->
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="not_details">Hey we need more info to get started!</string>
+    <string name="title_activity_setting_flyout">SettingFlyout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="commentOn">Write comment on tutor\'s performance (publically viewable under tutor feedback. Other types of feedback can be emailed directly  to support @thetalklist.com)</string>
+
+    <!--Facebook Integration Details-->
+
+    <string name="com_facebook_loginview_log_out_button">Log out</string>
+    <string name="com_facebook_loginview_log_in_button">Log in</string>
+    <string name="com_facebook_loginview_log_in_button_continue">Sign in with Facebook</string>
+
+
+    <!--Biography Personal Details-->
+
+    <string name="personal">
+        Passion and creativity are the seeds of a happy and successful life. Ever since I was a kid,
+        I have  put my heart and soul into everything I do. I\'m a dancer, a teacher, a musician, and
+        a business owner to name a few. I am constantly  chalelnging myself by trying new things.
+    </string>
+
+    <string name="educational">
+        I went to school at San Diego State University  and graduated with a Bachelors Degree in
+        International Studies. I also received a Certificate of Spanish from the Institute Technolog-
+        ico de Costa Rica.
+    </string>
+
+    <string name="professional">
+        I have worked at the International Rescue Commitee located in san Diego as a tutor/in-
+        tern. While I was studing in Costa Rica. I taught English to  the university students at In-
+        stituto Technologico de Costa Rica. I moved on to work  at Kukulcan language school in
+        Cuernavaca, Mexico where I taught intermediate and advanced levels of Spanish to kids
+        and teenagers. When I was back  in the US, I worked at Berlitz Language School in San
+        Diego as an English and Spanish teacher, mainly teaching businessmen and women. Now
+        I am working at The Talk List.
+    </string>
+    <!--end of Biography Personal Details-->
+
+    <string name="studentText">
+        Nice! You\'ve got 10 free credits. Click any tutor to talk now.
+        Or swipe right to add to Favorites.
+    </string>
+
+    <string name="tutortext">
+        Nice! The world sees your updated profile.
+        Your tutoring light is ON by default but toggle anytime.
+    </string>
+
+
+    <string-array name="sub">
+        <item>Select Subject</item>
+    </string-array>
+    <string-array name="state">
+        <item>State</item>
+    </string-array>
+
+
+    <string-array name="navigation_drawer_item_text_array">
+        <item>Profile</item>
+        <item>Desired Tutor</item>
+        <item>Payment Options</item>
+        <item>Lesson Tracking</item>
+        <item>TTL Score</item>
+        <item>History</item>
+        <item>Notification</item>
+        <item>Support</item>
+        <item>Sign out</item>
+        <item>Tutor Guide</item>
+    </string-array>
+
+    <string-array name="Biography_subjects">
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Biology</item>
+        <item>Business</item>
+        <item>Chemistry</item>
+        <item>Computer Science</item>
+        <item>Engineering</item>
+        <item>Math</item>
+        <item>Physics</item>
+
+    </string-array>
+
+
+    <string-array name="Language">
+        <item>Select first Language</item>
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Belorussian</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Burmese</item>
+        <item>Chinese (Cantonese)</item>
+        <item>Chinese (Mandarin)</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>Farsi</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Khmer (Cambodian)</item>
+        <item>Korean</item>
+        <item>Kosovan</item>
+        <item>Kurdish</item>
+        <item>Laotian</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Malay</item>
+        <item>Norwegian</item>
+        <item>Pashto</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Somali</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Taiwanese</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Traditional Chinese</item>
+    </string-array>
+
+
+    <string-array name="Language_for_desiredTutor">
+        <item>Select Instruction Language</item>
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Belorussian</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Burmese</item>
+        <item>Chinese (Cantonese)</item>
+        <item>Chinese (Mandarin)</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>Farsi</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Khmer (Cambodian)</item>
+        <item>Korean</item>
+        <item>Kosovan</item>
+        <item>Kurdish</item>
+        <item>Laotian</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Malay</item>
+        <item>Norwegian</item>
+        <item>Pashto</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Somali</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Taiwanese</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Traditional Chinese</item>
+    </string-array>
+
+    <string-array name="Language1">
+        <item>Select Second Language</item>
+        <item>English</item>
+        <item>Arabic</item>
+        <item>Armenian</item>
+        <item>Azerbaijani</item>
+        <item>Basque</item>
+        <item>Belorussian</item>
+        <item>Bosnian</item>
+        <item>Bulgarian</item>
+        <item>Burmese</item>
+        <item>Chinese (Cantonese)</item>
+        <item>Chinese (Mandarin)</item>
+        <item>Croatian</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>Farsi</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hindi</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Khmer (Cambodian)</item>
+        <item>Korean</item>
+        <item>Kosovan</item>
+        <item>Kurdish</item>
+        <item>Laotian</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Malay</item>
+        <item>Norwegian</item>
+        <item>Pashto</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Serbian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Somali</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Taiwanese</item>
+        <item>Thai</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+        <item>Uzbek</item>
+        <item>Vietnamese</item>
+        <item>Traditional Chinese</item>
+    </string-array>
+
+
+    <string name="buycredit">
+        Purchase credits to talk with tutors. Credits are deducted based
+        on tutor\'s rate per minute.
+    </string>
+
+
+    <string name="ttltext1">
+        Your TTL Score is a result of your activity and global
+        network you\'ve built on TheTalkList.
+    </string>
+
+    <string name="award">
+        Stay active to earn awards.
+    </string>
+    <string name="awardtxt1">
+        Featured on Facebook post.
+    </string>
+    <string name="awardtxt2">
+        Free session coupon.
+    </string>
+    <string name="awardtxt3">
+        Ticket entry for annual expenses paid
+        trip to TheTalkList USA or Global
+        Student meeting.
+    </string>
+    <string name="question_for_daily_game">
+        What do you call a car that has
+        an old un-kept appearance?
+    </string>
+
+    <string-array name="Gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+</resources>

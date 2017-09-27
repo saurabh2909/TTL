@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/videoListLayout"
+    android:layout_margin="5dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+
+        android:orientation="vertical"
+
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/videoList_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:text="Title"
+            android:textColor="#85929E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/videoList_list_tutorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom|center_vertical"
+            android:maxLines="1"
+            android:text="Tutor Name"
+            android:textColor="#85929E"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/eye" />
+
+            <TextView
+                android:id="@+id/videoList_list_seen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="28,000"
+                android:textColor="#85929E"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+       <!-- <com.elyeproj.loaderviewlibrary.LoaderImageView
+            android:id="@+id/videoThumb_alter"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />-->
+        <ImageView
+            android:id="@+id/videoThumb"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000000" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.saubhagyam.thetalklist.com.Application.saubhagyam.thetalklist.History">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EAEDED"
+            android:gravity="fill_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="History"
+                android:textColor="#B3B6B7"
+                android:textSize="15sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/historyt"
+            android:gravity="fill_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:textAlignment="textStart"
+                android:text="User Name"
+                android:textColor="#85929E"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Date"
+                android:textAlignment="textStart"
+                android:textColor="#85929E"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingStart="0dp"
+                android:gravity="center"
+                android:text="Credits"
+                android:textColor="#85929E"
+                android:textSize="16sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.srx.widget.PullToLoadView
+                android:orientation="vertical"
+                android:id="@+id/history_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FBFCFC">
+
+            </com.srx.widget.PullToLoadView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

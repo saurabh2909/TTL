@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.saubhagyam.thetalklist.com.Application.saubhagyam.thetalklist.DesiredTutor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#EAEDED"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="Desired Tutor"
+                    android:textColor="#B3B6B7"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#F8F9F9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spnSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:entries="@array/sub"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#F8F9F9" />
+
+                <Spinner
+                    android:id="@+id/spnFirstlang"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/Language_for_desiredTutor" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#F8F9F9" />
+
+               <!-- <Spinner
+                    android:id="@+id/spnSecondlang"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/Language1" />-->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#F8F9F9" />
+
+                <Spinner
+                    android:id="@+id/spnGen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/Gender" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#F8F9F9" />
+
+                <Spinner
+                    android:id="@+id/spnCountry"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_height="40dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#F8F9F9" />
+
+                <Spinner
+                    android:id="@+id/spnState"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="-10dp"
+                    android:entries="@array/state"
+                     />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#F8F9F9" />
+                <!--
+                      android:entries="@array/Country"
+                <View
+                     android:layout_width="fill_parent"
+                     android:layout_height="1dp"
+                     android:background="#F8F9F9" />
+
+                 <Spinner
+                     android:id="@+id/spnState"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp" />-->
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/keyWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#00000000"
+                    android:hint="Keyword"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#85929E" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#F8F9F9" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/desiredTutor_save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/capt"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

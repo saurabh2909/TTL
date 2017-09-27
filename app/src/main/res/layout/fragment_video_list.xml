@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.saubhagyam.thetalklist.com.Application.saubhagyam.thetalklist.VideoList">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/backgroubnd_black_border_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/videosearch_searchView"
+                        android:layout_gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:background="@drawable/backgroubnd_black_border_square"
+                        android:queryHint="1 video-1 topic-1 minute" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/recordVid"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/video" />
+            </LinearLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/videoListSwipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/videoList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/videoList_ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#80000000"
+            android:gravity="center">
+
+            <pl.droidsonroids.gif.GifImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="#FFD4D9D0"
+                android:orientation="vertical"
+                android:src="@drawable/loading">
+
+            </pl.droidsonroids.gif.GifImageView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

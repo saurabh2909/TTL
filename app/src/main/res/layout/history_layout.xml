@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:orientation="horizontal">
+
+<TextView
+    android:id="@+id/userName_TV"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="Credits"
+    android:layout_marginStart="10dp"
+    android:textColor="#85929E"
+    android:textSize="14sp"
+android:padding="10dp"
+    android:singleLine="true"
+    android:textAlignment="textStart"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <!--<TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#85929E"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <TextView
+        android:id="@+id/date_TV"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Credits"
+        android:textColor="#85929E"
+        android:layout_marginStart="20dp"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:id="@+id/credit_TV"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Credits"
+        android:textAlignment="textStart"
+        android:textColor="#85929E"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
