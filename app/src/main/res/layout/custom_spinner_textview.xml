@@ -6,7 +6,10 @@
     android:layout_marginStart="35dp"
     android:padding="5dp"
     android:text="text"
-    android:textColor="#85929E"
-    android:fontFamily="brush-script"
-    style="@style/TextViewCustomFont"
-    android:textSize="18dp" />
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:focusable="false"
+    android:textColor="#000000"
+    android:textSize="15dp" />
+    <!--android:fontFamily="brush-script"-->
+    <!--style="@style/TextViewCustomFont"-->

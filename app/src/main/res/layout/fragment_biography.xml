@@ -281,15 +281,16 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-<<<<<<< HEAD
+
                 android:layout_height="match_parent"
                 android:paddingBottom="0dp"
                 android:paddingTop="10dp">
-=======
-                android:layout_height="wrap_content"
-                android:padding="10dp">
+
+              <!--  android:layout_height="wrap_content"
+                android:padding="10dp">-->
 
                 <TextView
+                    android:layout_gravity="center"
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -297,33 +298,33 @@
                     android:text="Tutoring Subjects: "
                     android:textSize="15dp"
                     android:textStyle="bold" />
->>>>>>> origin/master
+<!--&gt;>>>>>> origin/master-->
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-<<<<<<< HEAD
+android:layout_marginStart="-10dp"
                     android:gravity="center"
                     android:paddingBottom="0dp"
                     android:paddingLeft="10dp"
                     android:paddingTop="0dp">
-=======
-                    android:paddingRight="120dp">
->>>>>>> origin/master
+                    >
+                    <!--=======-->
+                    <!--&gt;>>>>>> origin/master-->
 
                     <TextView
                         android:id="@+id/t"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="5dp"
                         android:gravity="center"
                         android:text="Tutoring Rate ($/min): "
-                        android:textSize="15dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -393,14 +394,14 @@
                              android:layout_width="wrap_content"
                              android:layout_height="match_parent" />-->
                     </LinearLayout>
-=======
+<!--=======-->
                     <ProgressBar
                         android:id="@+id/biography_languages_progress"
                         android:layout_width="fill_parent"
                         android:layout_height="20dp" />
 
 
->>>>>>> origin/master
+<!--&gt;>>>>>> origin/master-->
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -1083,7 +1084,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginLeft="15dp"
-                            android:text="10"
+                            android:text="0"
                             android:textSize="15dp"
                             android:textStyle="bold" />
                     </LinearLayout>

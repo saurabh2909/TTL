@@ -194,7 +194,7 @@ public class MyDetailsB extends Fragment {
 
 
         String gen[] = getResources().getStringArray(R.array.Gender);
-        final ArrayAdapter genderAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, gen);
+        final ArrayAdapter genderAdapter = new ArrayAdapter(getContext(), R.layout.custom_spinner_textview, gen);
         gender.setAdapter(genderAdapter);
 
         if (pref111.getInt("gender",0)==0)
@@ -206,11 +206,11 @@ public class MyDetailsB extends Fragment {
         gender.setAdapter(spinner_adapter);*/
 
         String languages[] = getResources().getStringArray(R.array.Language);
-        ArrayAdapter langAdapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, languages);
+        ArrayAdapter langAdapter = new ArrayAdapter(getContext(), R.layout.custom_spinner_textview, languages);
         lang1.setAdapter(langAdapter);
         lang1.setSelection(langAdapter.getPosition(pref111.getString("nativeLanguage","")));
         String languages1[] = getResources().getStringArray(R.array.Language1);
-        final ArrayAdapter langAdapter1 = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, languages1);
+        final ArrayAdapter langAdapter1 = new ArrayAdapter(getContext(), R.layout.custom_spinner_textview, languages1);
         lang2.setAdapter(langAdapter1);
         lang2.setSelection(langAdapter1.getPosition(pref111.getString("otherLanguage","")));
 
@@ -234,7 +234,7 @@ public class MyDetailsB extends Fragment {
 
 
                         if (getActivity() != null) {
-                            countryAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, coun);
+                            countryAdapter = new ArrayAdapter<String>(getContext(), R.layout.custom_spinner_textview, coun);
                             country.setAdapter(countryAdapter);
 
                             for (int i = 0; i < ary.length(); i++) {
@@ -283,7 +283,7 @@ public class MyDetailsB extends Fragment {
                             states.add(data.getString("provice"));
                         }
                         if (getActivity() != null) {
-                            stateAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, states);
+                            stateAdapter = new ArrayAdapter<String>(getContext(), R.layout.custom_spinner_textview, states);
 
                             state.setAdapter(stateAdapter);
                             for (int i = 0; i < ary.length(); i++) {

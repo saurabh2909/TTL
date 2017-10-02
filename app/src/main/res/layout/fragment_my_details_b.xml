@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:text="You must fill out the following information before you are able to begin tutoring"
+                android:text="Enter Details. For Tutors also enter Biography."
                 android:textSize="13dp"
                 android:visibility="gone" />
 
@@ -224,7 +224,7 @@
                         android:id="@+id/genderMyDetails"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="30dp"
                         android:backgroundTint="#00000000"
                         android:entries="@array/Gender"
                         android:textColor="#000000"
@@ -264,7 +264,7 @@
                         android:id="@+id/countryMyDetails"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_marginStart="23dp"
+                        android:layout_marginStart="33dp"
                         android:backgroundTint="#00000000"
                         android:textColor="#000000"
                         android:textColorHint="#000000" />
@@ -304,7 +304,7 @@
                         android:id="@+id/state"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_marginStart="23dp"
+                        android:layout_marginStart="33dp"
                         android:backgroundTint="#00000000"
                         android:textColor="#000000"
                         android:textColorHint="#000000" />
@@ -521,7 +521,7 @@
                         android:backgroundTint="#00000000"
                         android:entries="@array/Language"
                         android:hint="Language 1"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="35dp"
                         android:textColor="#000000"
                         android:textColorHint="#000000" />
                 </LinearLayout>
@@ -562,7 +562,7 @@
                         android:backgroundTint="#00000000"
                         android:entries="@array/Language1"
                         android:hint="Language 1"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="35dp"
                         android:paddingRight="-10dp"
                         android:textColor="#000000"
                         android:textColorHint="#000000" />

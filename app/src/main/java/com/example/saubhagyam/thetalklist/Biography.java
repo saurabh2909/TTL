@@ -133,9 +133,9 @@ public class Biography extends Fragment {
         biography_rate_edit = (ImageView) view.findViewById(R.id.biography_rate_edit);
         biography_rate_textview = (TextView) view.findViewById(R.id.biography_rate_textview);
 
-        ratingBarbiography= (RatingBar) view.findViewById(R.id.ratingBarbiography);
+        ratingBarbiography = (RatingBar) view.findViewById(R.id.ratingBarbiography);
 
-        biography_video_thum_recycle= (RecyclerView) view.findViewById(R.id.biography_video_thum_recycle);
+        biography_video_thum_recycle = (RecyclerView) view.findViewById(R.id.biography_video_thum_recycle);
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
 
@@ -143,20 +143,20 @@ public class Biography extends Fragment {
 
         new VideoUrlHandler().execute();
         {
-            String url="http://www.thetalklist.com/api/biography_video?uid="+preferences.getInt("id",0);
+            String url = "http://www.thetalklist.com/api/biography_video?uid=" + preferences.getInt("id", 0);
 
 
-            StringRequest sr=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            StringRequest sr = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
-Log.e("video response thumb",response);
+                    Log.e("video response thumb", response);
 
                     try {
-                        JSONObject resultObj=new JSONObject(response);
+                        JSONObject resultObj = new JSONObject(response);
 
-                        if (resultObj.getInt("status")==0){
-                            JSONArray biography_video_ary=resultObj.getJSONArray("biography_video");
-                            biography_video_thum_recycle.setAdapter(new Biography_videoThumb_adapter(getContext(),biography_video_ary,biography_videoview,biography_videoview_progress,controlLayout));
+                        if (resultObj.getInt("status") == 0) {
+                            JSONArray biography_video_ary = resultObj.getJSONArray("biography_video");
+                            biography_video_thum_recycle.setAdapter(new Biography_videoThumb_adapter(getContext(), biography_video_ary, biography_videoview, biography_videoview_progress, controlLayout));
 
                         }
 
@@ -175,12 +175,11 @@ Log.e("video response thumb",response);
         }
 
 
-
         biography_professional = (TextView) view.findViewById(R.id.biography_professional);
         biography_personal = (TextView) view.findViewById(R.id.biography_personal);
         biography_educational = (TextView) view.findViewById(R.id.biography_educational);
 
-        review_root_biography= (LinearLayout) view.findViewById(R.id.review_root_biography);
+        review_root_biography = (LinearLayout) view.findViewById(R.id.review_root_biography);
 
         biography_professional_edit = (EditText) view.findViewById(R.id.biography_professional_edit);
         biography_personal_edit = (EditText) view.findViewById(R.id.biography_personal_edit);
@@ -206,8 +205,8 @@ Log.e("video response thumb",response);
 
 
 //        Toast.makeText(getContext(), "average ratings: "+preferences.getFloat("avgRate",0.0F), Toast.LENGTH_SHORT).show();
-        if (preferences.getFloat("avgRate",0.0f)!=0.0f)
-            ratingBarbiography.setRating(preferences.getFloat("avgRate",0.0f));
+        if (preferences.getFloat("avgRate", 0.0f) != 0.0f)
+            ratingBarbiography.setRating(preferences.getFloat("avgRate", 0.0f));
 
 //        biographyCPS.setText(preferences.getString("credit_balance", ""));
 
@@ -253,8 +252,8 @@ for (int i=0;i<5;i++){
 
 //        View subject_layout=getLayoutInflater().inflate(R.layout.biography_subject_layout)
 
-        ratings_11= (LinearLayout) view.findViewById(R.id.ratings_11);
-        final int height1=review_root_biography.getHeight();
+        ratings_11 = (LinearLayout) view.findViewById(R.id.ratings_11);
+        final int height1 = review_root_biography.getHeight();
         ratings_11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -273,7 +272,7 @@ for (int i=0;i<5;i++){
             }
         });
         {
-            String URL = "http://www.thetalklist.com/api/reviews?uid="+ + getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt("userId", 0);
+            String URL = "http://www.thetalklist.com/api/reviews?uid=" + +getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt("userId", 0);
             Log.e("review url", URL);
 //            new myLoginData().execute();
 
@@ -282,55 +281,61 @@ for (int i=0;i<5;i++){
                 @Override
                 public void onResponse(String response) {
                     try {
-                        Log.e("review response",response);
-                        JSONObject res=new JSONObject(response);
-                        if (res.getInt("status")==0){
-                            JSONArray reviewAry=res.getJSONArray("review");
+                        Log.e("review response", response);
+                        JSONObject res = new JSONObject(response);
+                        if (res.getInt("status") == 0) {
+                            JSONArray reviewAry = res.getJSONArray("review");
+                            if (reviewAry.length() > 0) {
+                                ((TextView) view.findViewById(R.id.biography_totalreview)).setText((String.valueOf(reviewAry.length())));
 
-                            ((TextView)view.findViewById(R.id.biography_totalreview)).setText((String.valueOf(reviewAry.length())));
+                                for (int i = 0; i < reviewAry.length(); i++) {
 
-                            for (int i=0;i<reviewAry.length();i++)
-                            {
+                                    JSONObject obj = (JSONObject) reviewAry.get(i);
 
-                                JSONObject obj= (JSONObject) reviewAry.get(i);
+                                    View convertView = LayoutInflater.from(getContext()).inflate(R.layout.available_tutor_expanded_ratings_feedback, null);
 
-                                View convertView = LayoutInflater.from(getContext()).inflate(R.layout.available_tutor_expanded_ratings_feedback, null);
+                                    ImageView imageView = (ImageView) convertView.findViewById(R.id.imageView9);
+                                    Glide.with(getContext()).load("https://www.thetalklist.com/uploads/images/" + obj.getString("pic"))
+                                            .crossFade()
+                                            .thumbnail(0.5f)
+                                            .bitmapTransform(new CircleTransform(getContext()))
+                                            .diskCacheStrategy(DiskCacheStrategy.ALL)
+                                            .into(imageView);
+                                    TextView review_name = (TextView) convertView.findViewById(R.id.review_name);
+                                    review_name.setText(obj.getString("firstName"));
+                                    TextView review_rate = (TextView) convertView.findViewById(R.id.review_rate);
+                                    review_rate.setText(obj.getString("msg"));
 
-                               ImageView imageView = (ImageView) convertView.findViewById(R.id.imageView9);
-                                Glide.with(getContext()).load("https://www.thetalklist.com/uploads/images/" +obj.getString("pic"))
-                                        .crossFade()
-                                        .thumbnail(0.5f)
-                                        .bitmapTransform(new CircleTransform(getContext()))
-                                        .diskCacheStrategy(DiskCacheStrategy.ALL)
-                                        .into(imageView);
-                                TextView review_name= (TextView) convertView.findViewById(R.id.review_name);
-                                review_name.setText(obj.getString("firstName"));
-                                TextView review_rate= (TextView) convertView.findViewById(R.id.review_rate);
-                                review_rate.setText(obj.getString("msg"));
+                                    RatingBar ratingBar1 = (RatingBar) convertView.findViewById(R.id.ratingBar1);
 
-                                RatingBar ratingBar1= (RatingBar) convertView.findViewById(R.id.ratingBar1);
+                                    ratingBar1.setRating(Float.parseFloat(obj.getString("clearReception")));
 
-                                ratingBar1.setRating(Float.parseFloat(obj.getString("clearReception")));
+                                    String date = obj.getString("create_at");
+                                    Date date_txt = null;
+                                    String[] months = {"Jan", "Feb", "Mar", "April", "may", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
-                                String date=obj.getString("create_at");
-                                Date date_txt=null;
-                                String[] months={"Jan","Feb","Mar","April","may","June","July","Aug","Sep","Oct","Nov","Dec"};
+                                    if (date != null) {
+                                        date_txt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US).parse(date);
+                                        int month = Integer.parseInt(new SimpleDateFormat("MM", Locale.US).format(date_txt));
+                                        int day = Integer.parseInt(new SimpleDateFormat("dd", Locale.US).format(date_txt));
+                                        int year = Integer.parseInt(new SimpleDateFormat("yyyy", Locale.US).format(date_txt));
 
-                                if (date!=null){
-                                    date_txt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US).parse(date);
-                                    int month= Integer.parseInt(new SimpleDateFormat("MM", Locale.US).format(date_txt));
-                                    int day= Integer.parseInt(new SimpleDateFormat("dd", Locale.US).format(date_txt));
-                                    int year= Integer.parseInt(new SimpleDateFormat("yyyy", Locale.US).format(date_txt));
+                                        TextView biography_date_review = (TextView) convertView.findViewById(R.id.biography_date_review);
 
-                                    TextView biography_date_review= (TextView) convertView.findViewById(R.id.biography_date_review);
+                                        biography_date_review.setText(String.valueOf(day) + "-" + months[month - 1] + "-" + String.valueOf(year));
+                                    }
 
-                                    biography_date_review.setText(String.valueOf(day)+"-"+months[month-1]+"-"+String.valueOf(year));
+                                    review_root_biography.addView(convertView);
+
                                 }
-
-                                review_root_biography.addView(convertView);
-
+                            }else {
+                                ((TextView) view.findViewById(R.id.biography_totalreview)).setText("00");
                             }
                         }
+                        else {
+                            ((TextView) view.findViewById(R.id.biography_totalreview)).setText("00");
+                        }
+
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -346,7 +351,7 @@ for (int i=0;i<5;i++){
                 }
             });
             Volley.newRequestQueue(getContext()).add(sr);
-                }
+        }
 
         biography_rate_edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -613,7 +618,6 @@ Log.e("chnage bio  ",URL);
         });*/
 
 
-
         queue1 = Volley.newRequestQueue(
 
                 getContext());
@@ -682,7 +686,6 @@ Log.e("chnage bio  ",URL);
 //        mediaController = new MediaController(getContext());
 
 
-
         biography_languages = (TextView) view.findViewById(R.id.biography_languages);
         biography_languages_progress = (ProgressBar) view.findViewById(R.id.biography_languages_progress);
 
@@ -713,7 +716,7 @@ Log.e("chnage bio  ",URL);
                 }
             }
         });*/
-       final int height=biography_biographyfrag_layout.getHeight();
+        final int height = biography_biographyfrag_layout.getHeight();
 
         biography_11.setOnClickListener(new View.OnClickListener()
 
@@ -737,7 +740,7 @@ Log.e("chnage bio  ",URL);
             }
         });
 
-        final LinearLayout biography_video= (LinearLayout) view.findViewById(R.id.biography_video);
+        final LinearLayout biography_video = (LinearLayout) view.findViewById(R.id.biography_video);
         video_11.setOnClickListener(new View.OnClickListener()
 
         {
@@ -847,11 +850,9 @@ Log.e("chnage bio  ",URL);
                 t.replace(R.id.viewpager, new Biography_subject_Fragment()).commit();
             }
         });
-id=getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt("userId", 0);
+        id = getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt("userId", 0);
         return view;
     }
-
-
 
 
     private class subjectHandler extends AsyncTask<Void, Void, Void> {
@@ -902,7 +903,7 @@ id=getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt
                                     }
                                 }
                                 biography_languages.setText(sub);
-                            }else biography_languages.setText("");
+                            } else biography_languages.setText("");
                             view.findViewById(R.id.biography_languages_progress).setVisibility(View.GONE);
                         }
                     } catch (JSONException e) {
@@ -918,7 +919,7 @@ id=getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt
 //                    Toast.makeText(getContext(), "Subject not getting", Toast.LENGTH_SHORT).show();
                 }
             });
-            Volley.newRequestQueue( getContext()).add(sr);
+            Volley.newRequestQueue(getContext()).add(sr);
             return null;
         }
     }
@@ -980,7 +981,7 @@ id=getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt
                                 }
                             }
                             biography_languages.setText(sub);
-                        }else biography_languages.setText("");
+                        } else biography_languages.setText("");
                         view.findViewById(R.id.biography_languages_progress).setVisibility(View.GONE);
                     }
                 } catch (JSONException e) {
@@ -996,7 +997,7 @@ id=getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt
 //                    Toast.makeText(getContext(), "Subject not getting", Toast.LENGTH_SHORT).show();
             }
         });
-       queue.add(sr);
+        queue.add(sr);
     }
 
 
@@ -1050,7 +1051,7 @@ id=getContext().getSharedPreferences("loginStatus", Context.MODE_PRIVATE).getInt
                                 }
                             }
                             biography_languages.setText(sub);
-                        }else biography_languages.setText("");
+                        } else biography_languages.setText("");
                         view.findViewById(R.id.biography_languages_progress).setVisibility(View.GONE);
                     }
                 } catch (JSONException e) {

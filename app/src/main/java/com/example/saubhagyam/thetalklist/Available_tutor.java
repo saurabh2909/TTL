@@ -320,7 +320,7 @@ fragmentTransaction.replace(R.id.viewpager,new DesiredTutor()).commit();
 
         }.execute();*/
 
-        SharedPreferences prefDesired = getContext().getSharedPreferences("SearchTutorDesiredTutorPreferences", Context.MODE_PRIVATE);
+        final SharedPreferences prefDesired = getContext().getSharedPreferences("SearchTutorDesiredTutorPreferences", Context.MODE_PRIVATE);
 final SharedPreferences.Editor editor=prefDesired.edit();
 
         preference = getApplicationContext().getSharedPreferences("AvailableTutorPref", Context.MODE_PRIVATE);
@@ -393,7 +393,7 @@ final SharedPreferences.Editor editor=prefDesired.edit();
 //                tutorSearchFromSearchBar(query);
                 linearLayout.setVisibility(View.VISIBLE);
 //                new AvailableTutor(query).execute();
-                tutorSearch( desire_subject, desire_lang1, desire_lang2, desire_country, desire_state, query, desired_gender);
+                tutorSearch( prefDesired.getString("subject",""), prefDesired.getString("lang1",""), prefDesired.getString("lang2",""), prefDesired.getString("country",""), prefDesired.getString("state",""), query, prefDesired.getString("gender",""));
 
                 return false;
             }
@@ -412,7 +412,7 @@ final SharedPreferences.Editor editor=prefDesired.edit();
                 edi.putString("query", "").apply();
 //                new AvailableTutor("").execute();
 //                Toast.makeText(getContext(), "Close button clcicked", Toast.LENGTH_SHORT).show();
-                tutorSearch( desire_subject, desire_lang1, desire_lang2, desire_country, desire_state, "", desired_gender);
+                tutorSearch( prefDesired.getString("subject",""), prefDesired.getString("lang1",""), prefDesired.getString("lang2",""), prefDesired.getString("country",""), prefDesired.getString("state",""), "", prefDesired.getString("gender",""));
             searchView.setQuery("",true);
             }
         });
